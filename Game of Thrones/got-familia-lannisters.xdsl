@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="Network2" numsamples="1000" discsamples="10000">
+	<nodes>
+		<cpt id="PaiTytosLannister">
+			<state id="Sem" />
+			<state id="Com" />
+			<probabilities>0.99 0.01</probabilities>
+		</cpt>
+		<cpt id="MaeTytosLannister">
+			<state id="Sem" />
+			<state id="Com" />
+			<probabilities>0.99 0.01</probabilities>
+		</cpt>
+		<cpt id="TytosLannister">
+			<state id="Sem" />
+			<state id="Com" />
+			<parents>PaiTytosLannister MaeTytosLannister</parents>
+			<probabilities>0.99 0.01 0.5 0.5 0.5 0.5 0 1</probabilities>
+		</cpt>
+		<cpt id="Esposa_TytosLannister">
+			<state id="Sem" />
+			<state id="Com" />
+			<probabilities>0.99 0.01</probabilities>
+		</cpt>
+		<cpt id="TywinLannister">
+			<state id="Sem" />
+			<state id="Com" />
+			<parents>TytosLannister Esposa_TytosLannister</parents>
+			<probabilities>0.99 0.01 0.5 0.5 0.5 0.5 0 1</probabilities>
+		</cpt>
+		<cpt id="Tio_TywinLannister">
+			<state id="Sem" />
+			<state id="Com" />
+			<parents>PaiTytosLannister MaeTytosLannister</parents>
+			<probabilities>0.99 0.01 0.5 0.5 0.5 0.5 0 1</probabilities>
+		</cpt>
+		<cpt id="Tia_TywinLannister">
+			<state id="Sem" />
+			<state id="Com" />
+			<probabilities>0.99 0.01</probabilities>
+		</cpt>
+		<cpt id="JoanaLannister">
+			<state id="Sem" />
+			<state id="Com" />
+			<parents>Tio_TywinLannister Tia_TywinLannister</parents>
+			<probabilities>0.99 0.01 0.5 0.5 0.5 0.5 0 1</probabilities>
+		</cpt>
+		<cpt id="JaimeLannister">
+			<state id="Sem" />
+			<state id="Com" />
+			<parents>TywinLannister JoanaLannister</parents>
+			<probabilities>0.99 0.01 0.5 0.5 0.5 0.5 0 1</probabilities>
+		</cpt>
+		<cpt id="CerseiLannister">
+			<state id="Sem" />
+			<state id="Com" />
+			<parents>TywinLannister JoanaLannister</parents>
+			<probabilities>0.99 0.01 0.5 0.5 0.5 0.5 0 1</probabilities>
+		</cpt>
+		<cpt id="TyrionLannister">
+			<state id="Sem" />
+			<state id="Com" />
+			<parents>TywinLannister JoanaLannister</parents>
+			<probabilities>0.99 0.01 0.5 0.5 0.5 0.5 0 1</probabilities>
+		</cpt>
+		<cpt id="JoffreyLannister">
+			<state id="Sem" />
+			<state id="Com" />
+			<parents>JaimeLannister CerseiLannister</parents>
+			<probabilities>0.99 0.01 0.5 0.5 0.5 0.5 0 1</probabilities>
+		</cpt>
+		<cpt id="MyrcelaLannister">
+			<state id="Sem" />
+			<state id="Com" />
+			<parents>JaimeLannister CerseiLannister</parents>
+			<probabilities>0.99 0.01 0.5 0.5 0.5 0.5 0 1</probabilities>
+		</cpt>
+		<cpt id="TommenLannister">
+			<state id="Sem" />
+			<state id="Com" />
+			<parents>JaimeLannister CerseiLannister</parents>
+			<probabilities>0.99 0.01 0.5 0.5 0.5 0.5 0 1</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 2.0.5219.0" name="Lannisters - Game of Thrones" faultnameformat="nodestate">
+			<node id="TywinLannister">
+				<name>Tywin Lannister</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>268 226 316 256</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="TytosLannister">
+				<name>Tytos Lannister</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>353 120 401 150</position>
+				<barchart active="true" width="159" height="64" />
+			</node>
+			<node id="Esposa_TytosLannister">
+				<name>Esposa de Tytos Lannister</name>
+				<interior color="ccffcc" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>153 120 201 150</position>
+				<barchart active="true" width="159" height="64" />
+			</node>
+			<node id="Tio_TywinLannister">
+				<name>Tio de Tywin Lannister</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>538 120 586 150</position>
+				<barchart active="true" width="159" height="64" />
+			</node>
+			<node id="Tia_TywinLannister">
+				<name>Tia de Tywin Lannister</name>
+				<interior color="ccffcc" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>725 118 773 148</position>
+				<barchart active="true" width="159" height="64" />
+			</node>
+			<node id="JoanaLannister">
+				<name>Joana Lannister</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>628 226 676 256</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="JaimeLannister">
+				<name>Jaime Lannister</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>268 346 316 376</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="CerseiLannister">
+				<name>Cersei Lannister</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>450 345 498 375</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="TyrionLannister">
+				<name>Tyrion Lannister</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>643 344 691 374</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="JoffreyLannister">
+				<name>Joffrey Lannister</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>140 466 188 496</position>
+				<barchart active="true" width="159" height="64" />
+			</node>
+			<node id="MyrcelaLannister">
+				<name>Myrcella Lannister</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>319 466 367 496</position>
+				<barchart active="true" width="159" height="64" />
+			</node>
+			<node id="TommenLannister">
+				<name>Tommen Lannister</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>499 466 547 496</position>
+				<barchart active="true" width="159" height="64" />
+			</node>
+			<node id="PaiTytosLannister">
+				<name>Pai Tytos Lannister</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>349 26 397 56</position>
+				<barchart active="true" width="159" height="64" />
+			</node>
+			<node id="MaeTytosLannister">
+				<name>Mãe Tytos Lannister</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>535 26 583 56</position>
+				<barchart active="true" width="159" height="64" />
+			</node>
+		</genie>
+	</extensions>
+</smile>

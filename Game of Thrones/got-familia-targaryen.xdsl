@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="Network3" numsamples="1000" discsamples="10000">
+	<nodes>
+		<cpt id="AegonTargaryan">
+			<state id="Sem" />
+			<state id="Com" />
+			<probabilities>0.99 0.01</probabilities>
+		</cpt>
+		<cpt id="RhaenysTargaryan">
+			<state id="Sem" />
+			<state id="Com" />
+			<probabilities>0.99 0.01</probabilities>
+		</cpt>
+		<cpt id="JaehaerysITargaryan">
+			<state id="Sem" />
+			<state id="Com" />
+			<parents>AegonTargaryan RhaenysTargaryan</parents>
+			<probabilities>0.99 0.01 0.5 0.5 0.5 0.5 0 1</probabilities>
+		</cpt>
+		<cpt id="AlysanneTargaryan">
+			<state id="Sem" />
+			<state id="Com" />
+			<parents>AegonTargaryan RhaenysTargaryan</parents>
+			<probabilities>0.99 0.01 0.5 0.5 0.5 0.5 0 1</probabilities>
+		</cpt>
+		<cpt id="BaelonTargaryan">
+			<state id="Sem" />
+			<state id="Com" />
+			<parents>JaehaerysITargaryan AlysanneTargaryan</parents>
+			<probabilities>0.99 0.01 0.5 0.5 0.5 0.5 0 1</probabilities>
+		</cpt>
+		<cpt id="AlyssaTargaryan">
+			<state id="Sem" />
+			<state id="Com" />
+			<parents>JaehaerysITargaryan AlysanneTargaryan</parents>
+			<probabilities>0.99 0.01 0.5 0.5 0.5 0.5 0 1</probabilities>
+		</cpt>
+		<cpt id="DaemonTargaryan">
+			<state id="Sem" />
+			<state id="Com" />
+			<parents>BaelonTargaryan AlyssaTargaryan</parents>
+			<probabilities>0.99 0.01 0.5 0.5 0.5 0.5 0 1</probabilities>
+		</cpt>
+		<cpt id="RhaenyraTargaryan">
+			<state id="Sem" />
+			<state id="Com" />
+			<parents>BaelonTargaryan AlyssaTargaryan</parents>
+			<probabilities>0.99 0.01 0.5 0.5 0.5 0.5 0 1</probabilities>
+		</cpt>
+		<cpt id="AegonIVTargaryan">
+			<state id="Sem" />
+			<state id="Com" />
+			<parents>DaemonTargaryan RhaenyraTargaryan</parents>
+			<probabilities>0.99 0.01 0.5 0.5 0.5 0.5 0 1</probabilities>
+		</cpt>
+		<cpt id="NaerysTargaryan">
+			<state id="Sem" />
+			<state id="Com" />
+			<parents>DaemonTargaryan RhaenyraTargaryan</parents>
+			<probabilities>0.99 0.01 0.5 0.5 0.5 0.5 0 1</probabilities>
+		</cpt>
+		<cpt id="AegonVTargaryan">
+			<state id="Sem" />
+			<state id="Com" />
+			<parents>AegonIVTargaryan NaerysTargaryan</parents>
+			<probabilities>0.99 0.01 0.5 0.5 0.5 0.5 0 1</probabilities>
+		</cpt>
+		<cpt id="EsposaAegonVTargaryan">
+			<state id="Sem" />
+			<state id="Com" />
+			<probabilities>0.99 0.01</probabilities>
+		</cpt>
+		<cpt id="ShaeraTargaryan">
+			<state id="Sem" />
+			<state id="Com" />
+			<parents>AegonVTargaryan EsposaAegonVTargaryan</parents>
+			<probabilities>0.99 0.01 0.5 0.5 0.5 0.5 0 1</probabilities>
+		</cpt>
+		<cpt id="JaehaerysTargaryan">
+			<state id="Sem" />
+			<state id="Com" />
+			<parents>AegonVTargaryan EsposaAegonVTargaryan</parents>
+			<probabilities>0.99 0.01 0.5 0.5 0.5 0.5 0 1</probabilities>
+		</cpt>
+		<cpt id="AerysIITargaryan">
+			<state id="Sem" />
+			<state id="Com" />
+			<parents>ShaeraTargaryan JaehaerysTargaryan</parents>
+			<probabilities>0.99 0.01 0.5 0.5 0.5 0.5 0 1</probabilities>
+		</cpt>
+		<cpt id="RhaellaTargaryan">
+			<state id="Sem" />
+			<state id="Com" />
+			<parents>ShaeraTargaryan JaehaerysTargaryan</parents>
+			<probabilities>0.99 0.01 0.5 0.5 0.5 0.5 0 1</probabilities>
+		</cpt>
+		<cpt id="Daenerys">
+			<state id="Sem" />
+			<state id="Com" />
+			<parents>RhaellaTargaryan AerysIITargaryan</parents>
+			<probabilities>0.99 0.01 0.5 0.5 0.5 0.5 0 1</probabilities>
+		</cpt>
+		<cpt id="Viserys">
+			<state id="Sem" />
+			<state id="Com" />
+			<parents>RhaellaTargaryan AerysIITargaryan</parents>
+			<probabilities>0.99 0.01 0.5 0.5 0.5 0.5 0 1</probabilities>
+		</cpt>
+		<cpt id="Rhaegar">
+			<state id="Sem" />
+			<state id="Com" />
+			<parents>RhaellaTargaryan AerysIITargaryan</parents>
+			<probabilities>0.99 0.01 0.5 0.5 0.5 0.5 0 1</probabilities>
+		</cpt>
+		<cpt id="LyannaStark">
+			<state id="Sem" />
+			<state id="Com" />
+			<probabilities>0.99 0.01</probabilities>
+		</cpt>
+		<cpt id="JonSnow">
+			<state id="Sem" />
+			<state id="Com" />
+			<parents>LyannaStark Rhaegar</parents>
+			<probabilities>0.99 0.01 0.5 0.5 0.5 0.5 0 1</probabilities>
+		</cpt>
+		<cpt id="JonearysSon">
+			<state id="Sem" />
+			<state id="Com" />
+			<parents>Daenerys JonSnow</parents>
+			<probabilities>0.99 0.01 0.5 0.5 0.5 0.5 0 1</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 2.0.5219.0" name="Targaryen - Game of Thrones" faultnameformat="nodestate">
+			<node id="AegonVTargaryan">
+				<name>Aegon V Targaryen</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>352 679 400 709</position>
+				<barchart active="true" width="159" height="64" />
+			</node>
+			<node id="EsposaAegonVTargaryan">
+				<name>Betha Blackwood</name>
+				<interior color="ccffcc" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>540 676 588 706</position>
+				<barchart active="true" width="159" height="64" />
+			</node>
+			<node id="AerysIITargaryan">
+				<name>Aerys II Targaryen</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>352 961 400 991</position>
+				<barchart active="true" width="159" height="64" />
+			</node>
+			<node id="RhaellaTargaryan">
+				<name>Rhaella Targaryen</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>539 960 587 990</position>
+				<barchart active="true" width="159" height="64" />
+			</node>
+			<node id="Daenerys">
+				<name>Daenerys Targaryen</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>238 1080 286 1110</position>
+				<barchart active="true" width="159" height="64" />
+			</node>
+			<node id="Viserys">
+				<name>Viserys Targaryen</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>818 1097 866 1127</position>
+				<barchart active="true" width="159" height="64" />
+			</node>
+			<node id="Rhaegar">
+				<name>Rhaegar Targaryen</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>418 1121 466 1151</position>
+				<barchart active="true" width="159" height="64" />
+			</node>
+			<node id="LyannaStark">
+				<name>Lyanna Stark</name>
+				<interior color="ccffcc" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>624 1120 672 1150</position>
+				<barchart active="true" width="159" height="64" />
+			</node>
+			<node id="JonSnow">
+				<name>Jon Snow</name>
+				<interior color="ccffff" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>512 1255 560 1285</position>
+				<barchart active="true" width="159" height="64" />
+			</node>
+			<node id="JonearysSon">
+				<name>Filho</name>
+				<interior color="ccffff" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>238 1254 286 1284</position>
+				<barchart active="true" width="159" height="64" />
+			</node>
+			<node id="ShaeraTargaryan">
+				<name>Shaera Targaryen</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>350 812 398 842</position>
+				<barchart active="true" width="159" height="64" />
+			</node>
+			<node id="JaehaerysTargaryan">
+				<name>Jaehaerys Targaryen</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>541 807 589 837</position>
+				<barchart active="true" width="159" height="64" />
+			</node>
+			<node id="AegonIVTargaryan">
+				<name>Aegon IV Targaryen</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>350 558 398 588</position>
+				<barchart active="true" width="159" height="64" />
+			</node>
+			<node id="NaerysTargaryan">
+				<name>Naerys Targaryen</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>538 555 586 585</position>
+				<barchart active="true" width="159" height="64" />
+			</node>
+			<node id="DaemonTargaryan">
+				<name>Daemon Targaryen</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>352 429 400 459</position>
+				<barchart active="true" width="159" height="64" />
+			</node>
+			<node id="RhaenyraTargaryan">
+				<name>Rhaenyra Targaryen</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>540 426 588 456</position>
+				<barchart active="true" width="159" height="64" />
+			</node>
+			<node id="BaelonTargaryan">
+				<name>Baelon Targaryen</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>350 298 398 328</position>
+				<barchart active="true" width="159" height="64" />
+			</node>
+			<node id="AlyssaTargaryan">
+				<name>Alyssa Targaryen</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>538 295 586 325</position>
+				<barchart active="true" width="159" height="64" />
+			</node>
+			<node id="JaehaerysITargaryan">
+				<name>Jaehaerys I Targaryen</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>348 173 396 203</position>
+				<barchart active="true" width="159" height="64" />
+			</node>
+			<node id="AlysanneTargaryan">
+				<name>Alysanne Targaryen</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>538 170 586 200</position>
+				<barchart active="true" width="159" height="64" />
+			</node>
+			<node id="AegonTargaryan">
+				<name>Aegon Targaryen</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>350 61 398 91</position>
+				<barchart active="true" width="159" height="64" />
+			</node>
+			<node id="RhaenysTargaryan">
+				<name>Rhaenys Targaryen</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>540 58 588 88</position>
+				<barchart active="true" width="159" height="64" />
+			</node>
+		</genie>
+	</extensions>
+</smile>
